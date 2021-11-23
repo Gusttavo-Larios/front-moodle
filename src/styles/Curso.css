@@ -1,0 +1,32 @@
+.containerCurso {
+  width: 90%;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerCurso img {
+  width: 100%;
+  height: 20rem;
+}
+
+.containerCurso .titulo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 110%;
+
+  color: #10203f;
+}
+
+.containerCurso .descricao {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #4d4d4d;
+}
