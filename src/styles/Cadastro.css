@@ -1,0 +1,134 @@
+.containerCadastro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 30%;
+  height: 51rem;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2.5rem 0 2.5rem;
+  box-shadow: 0 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  animation-name: form;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes form {
+  from {
+    transform: translateY(-10000px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.form img {
+  width: 6.4rem;
+  height: 4.912rem;
+  margin: 0 auto;
+}
+
+.form span {
+  margin: 2.5rem auto 0 auto;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #000000;
+}
+
+.form label {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #000000;
+  margin-top: 2rem;
+}
+
+.form .inputText {
+  background: #ffffff;
+  border: 0;
+  border-radius: 10px;
+}
+
+.form .inputText {
+  height: 4rem;
+  background: #ffffff;
+  border: 0;
+  border-radius: 10px;
+}
+
+.form input {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 1.5rem;
+}
+
+.form textarea {
+  resize: none;
+  width: 100%;
+  height: 8rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: initial;
+  margin-top: 1rem;
+  background: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 1.5rem;
+}
+
+.form .containerButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.7rem;
+  height: 5rem;
+}
+
+.form button {
+  background: #357a32;
+  border-radius: 10px;
+  border: 0;
+  width: 45%;
+  height: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form .back {
+  background: transparent;
+}
+
+.form button a {
+  color: #484848;
+  text-decoration: none;
+}
+
+.form .cadastrar {
+  transition: 0.5s ease-in-out;
+}
+
+.form .cadastrar:hover {
+  background-color: #45c340;
+}

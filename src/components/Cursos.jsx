@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ModalContext } from '../Context/ModalContext';
 import '../styles/Curso.css'
-// import { Container } from './styles';
 
-function Cursos({ logo, nome, descricao }) {
+function Cursos(props) {
+  const { setVisibilidade, setConteudo } = useContext(ModalContext)
   return (
-    <div className="containerCurso">
-      <img src={logo} alt={nome} />
-      <span className="titulo">{nome}</span>
-      <span className="descricao">{descricao}</span>
-    </div>
+    <div className="containerCurso" onClick={() => {
+      setVisibilidade(true)
+      setConteudo(props.item)
+    }}>
+      <div className="effect">
+        <span className="titulo">{props.item.curso}</span>
+      </div>
+    </div >
   )
 }
 

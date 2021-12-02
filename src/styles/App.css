@@ -1,36 +1,90 @@
 .containerHome {
   width: 100%;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .containerHeader {
   width: 100%;
-  height: 25rem;
-  background-color: #10203f;
+  height: 12rem;
+  background: #357a32;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  box-sizing: border-box;
+  animation-name: header;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes header {
+  from {
+    transform: translateY(-10000px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.containerHeader .link {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  width: max-content;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
 }
 
 .containerBody {
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin: 0;
+  color: #000000;
+  animation-name: titulo;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes titulo {
+  from {
+    transform: translateX(-10000px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .cursos {
   width: 90%;
-  height: 50%;
+  height: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
   margin-top: 8rem;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.semCurso {
+  width: 40rem;
+  height: 40rem;
+  margin-top: 3rem;
+}
